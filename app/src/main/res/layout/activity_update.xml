@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TambahDataActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
+        android:paddingBottom="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ed_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pengeluaran"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
+
+        android:paddingBottom="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ed_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Keterangan"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ed_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="UPDATE Data"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:text="DELETE Data"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
